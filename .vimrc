@@ -11,9 +11,9 @@ set encoding=utf8
 
 " use 4 spaces for tabs
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set shiftround
 
 set backspace =indent,eol,start
@@ -152,3 +152,14 @@ syntax on
 set background=dark
 let g:onedark_termcolors=16
 " colorscheme flattened_dark
+set number
+" -----------------------------------------------------------------------------
+"  CUSTOM AMENDMENTS
+" -----------------------------------------------------------------------------
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
